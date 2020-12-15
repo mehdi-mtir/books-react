@@ -1,5 +1,5 @@
 import React from 'react';
-import Book from './Book';
+import Book from '../models/Book';
 
 
 class AddBook extends React.Component{
@@ -13,8 +13,8 @@ class AddBook extends React.Component{
       document.getElementById('date_publication').value,
       document.getElementById('prix').value
     );
-    console.log(book);
-    console.log(this.props);
+    //console.log(book);
+    //console.log(this.props);
     this.props.onAddBook(book);
   }
 
